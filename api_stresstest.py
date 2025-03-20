@@ -109,6 +109,7 @@ class APIStressTest:
             p95 = "N/A"
             p99 = "N/A"
 
+        # FIXME
         requests_per_second = self.successful_requests / total_time
 
         print("\nResponse Time (seconds):")
