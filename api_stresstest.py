@@ -55,7 +55,7 @@ class APIStressTest:
             print(f"Request {request_id}: {status} in {elapsed:.2f}s")
             
         except Exception as e:
-            end_time = time.time()
+            end_time = time.perf_counter()
             elapsed = end_time - start_time
             self.failed_requests += 1
             print(f"Request {request_id}: Failed in {elapsed:.2f}s - {str(e)}")
